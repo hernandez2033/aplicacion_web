@@ -13,6 +13,8 @@
         <%if (alumnos.length){%> <table class="table mt-2">
             <thead class="thead-dark">
                 <tr>
+                    <th>Nombre Completo</th>
+                    <th>Documento</th>
                     <th>Fecha</th>
                 </tr> 
             </thead>
@@ -29,7 +31,7 @@
         <% } else { %>
             <p>Sin registros</p>
         <% } %>
-        <a class="btn btn-primary p-2" href="/registro-form">Registrar Alumno</a>
+        <a class="btn btn-primary p-2" href="registro-form.ejs">Registrar Alumno</a>
     </div>
 </body>
 </html>

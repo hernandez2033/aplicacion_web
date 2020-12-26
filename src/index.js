@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 //settings
 app.set('port', process.env.PORT || 3000);
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'vistas')); //redireccionas la carpeta views por defecto a vistas
 app.set('view engine', 'ejs');
 //middlewares
 app.use(express.urlencoded({extended: false}));

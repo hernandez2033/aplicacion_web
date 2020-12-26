@@ -1,6 +1,5 @@
 const { Router } = require("express")
-
-const { Router } = require('express');
+//const { Router } = require('express');
 const router = new Router();
 
 let alumnos = [];//creamos un arrays con el nombre alumnos

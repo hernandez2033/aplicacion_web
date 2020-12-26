@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Registro Alumnos</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Registros de Alumnos</h3>
+<!--creamos una instruccion de desicion if-->
+        <%if (alumnos.length){%> <table class="table mt-2">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Fecha</th>
+                </tr> 
+            </thead>
+<!--hacemos uso del bucle ForEach-->
+            <% alumnos.forEach(function(alumno) { %>
+                <tr>
+                    <td><%= alumno.nombre %></td>
+                    <td><%= alumno.documento %></td>
+                    <td><%= alumno.fecha %></td>
+                </tr>
+                <% })%>
+        </table>
+<!-- else -->
+        <% } else { %>
+            <p>Sin registros</p>
+        <% } %>
+        <a class="btn btn-primary p-2" href="/registro-form">Registrar Alumno</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "aplicacion_web",
+  "version": "1.0.0",
+  "description": "aplicancion web con node, expresss, ejs y Bootstrap 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hernandez2033/aplicacion_web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hernandez2033/aplicacion_web/issues"
+  },
+  "homepage": "https://github.com/hernandez2033/aplicacion_web#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
